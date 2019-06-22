@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
+    stage('') {
       steps {
-        sh 'sh \'mvn -B -DskipTests clean package\''
+        dir(path: 'protectors-service')
       }
     }
   }
